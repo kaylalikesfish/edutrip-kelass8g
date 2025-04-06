@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Navigasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+ body {
+  font-family: 'Quicksand', sans-serif;
+  background: #fdfaf6 url('download (62).jpeg');;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* so the header stays up */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(download\ \(57\).jpeg);
+  background-size: 500px;
+  background-position: center;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #cb8992;
+  width: 100%;
+}
+
+header a {
+color:rgb(219, 148, 172);
+font-size: 18x;
+text-decoration: none;
+margin: 20px;
+transition: color 0.3s ease;
+font-style:italic;
+}
+
+
+header a:hover {
+color:royalblue;
+}
+
+
+.rounded-box {
+  background-color: #ffffff;
+  color: #ad6e70;
+  padding: 8px;
+  border-radius: 35px; 
+  display:inline-block;
+  font-size: 25px;
+  border: 2px solid #deacb6;
+  font-family: 'Quicksand', sans-serif;
+  width: 250px;
+  font-weight: bold;
+margin-bottom: 10px;
+}
+
+h1 {
+text-align: top;
+margin-top: 10px;
+font-size: 30 px;
+color:rgb(223, 134, 159);
+text-shadow: 2px 2px 5px #00000024;
+}
+
+.HeadImg {
+    display: block;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.container {
+      background: #fff8f5;
+      border: 2px dotted #e0c1c1;
+      margin-left:400px;
+      padding: 20px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: center;
+}
+
+.main-box {
+  display: flex;
+  background: #fff8f5;
+  border: 2px dotted #ddbfbf;
+  border-radius: 20px;
+  max-width: 1000px;
+  width: 55%;
+  box-shadow: 0 4px 8px #00000014;
+  overflow: visible;
+  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+    .left, .right {
+      padding: 20px;
+      width: 50%;
+    }
+
+    .left {
+      border-right: 2px dashed #e3caca;
+      text-align: center;
+    }
+
+    .left img {
+      width: 100px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      color: #b37564;
+      margin-bottom: 5px;
+    }
+
+    .pronouns {
+      font-size: 14px;
+      color: #e6bc7c;
+      margin-bottom: 15px;
+    }
+
+    .desc {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #473b3b;
+      text-align: justify;
+    }
+
+    .desc span {
+      color: #d28b94;
+      font-weight: bold;
+    }
+
+    .contact {
+      margin-top: 10px;
+    }
+
+    .contact img {
+      width: 30px;
+      margin: 0 5px;
+    }
+
+    .right h2 {
+      color: #8b6d6d;
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .right ul {
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .right li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      color: #db7f90;
+      font-weight: bold;
+    }
+
+    .link {
+      color: #c98fa8;
+      text-decoration: underline;
+    }
+
+    .subject-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.row img {
+  width: 100px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #caa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin: center;
+}
+
+.row img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.right {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.subject-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 2px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
+.subject p {
+  margin-top: 0px;
+  font-size: 14px;
+  color: #362727;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  border: none;
+  text-align: justify;
+
+  
+}
+
+.subject img {
+  border: none;
+  box-shadow: none;
+}
+    </style>
+<body>
+    <header>
+        <div class="rounded-box">kayla's website !</div>
+        <nav>
+    <a href="index.html">Home</a>
+    <a href="ppkn.html">Pkn</a>
+    <a href="bindo.html">Bahasa Indonesia</a>
+    <a href="agama.html">Agama</a>
+    <a href="ips.html">IPS</a>
+    <a href="english.html">English</a>
+    <a href="mand.html">Mandarin</a>
+    </nav>
+</header>
+<div class="main-box">
+    <div class="right">
+<h1>Lakeshore Hotel : penginapan nyaman dengan pemandangan keindahan alam Hualien</h1>
+<p>Nama Hotel : Lakeshore Hotel    </p>
+<p> Alamat : No. 142號, Zhongmei Rd, Hualien City, Hualien County, Taiwan 970</p>
+<p>        Tahun berdiri : 2005</p>
+<p>    Pemilik/Korporasi : Lakeshore Hotel International Group</p>
+<p>    Rating : 4/5</p>
+
+        <p>Hualien adalah kota yang terletak di pantai timur Taiwan, menghadap kepada Samudra Pasifik. Kota Hualien terkenal dengan keindahan alamnya yang sangat indah dan sebagai rumah untuk beberapa tempat wisata alam terbaik di negara Taiwan. Kota ini dikelilingi oleh pegunungan dan laut, menjadikannya lokasi yang sangat ideal bagi para pecinta alam dan petualang. Salah satu lokasi di Hualien yang sangat populer adalah “Chishingtan Scenic Area”. Chishingtan Scenic Area adalah suatu pantai yang bukan penuh dengan pasir tetapi dengan batu-batu yang bervariasi. Waktu yang paling cocok untuk berkunjung ke kota Hualien pastinya pada bulan Maret-Mei, karena cuacanya tidak terlalu panas dan tidak terlalu dingin hingga cuacanya sangat nyaman. 
+            Hualien merupakan salah satu area di Taiwan yang mempunyai budaya yang khas. Kota hualien memiliki berbagai macam suku seperti, Pancang, Truku, Bunun, dll. Di negara taiwan, mereka menggunakan coin dan juga duit lembar biasa dibandingkan dengan negara Indonesia yang sekarang lebih dominan menggunakan duit lembar dari pada koin. Kalau convert 1 NTD ke IDR, maka harga 1NTD adalah Rp.500. 
+        </p>
+        <p>Hotel Lakeshore Hualien berada di Zhongmei Rd, Hualien City, Hualien County, Taiwan 970. Gedung tersebut mempunyai 7 Lantai, dan mempunyai sekitar 223 kamar. Hotel ini menyediakan gym, tempat laundry, ruang makan, tempat suvenir dan juga ruangan untuk hewan peliharaan. Di sekitar hotel Lakeshore, ada mini market, cafe, 
+            atm dan juga rumah sakit. Hotel Lakeshore menyediakan beberapa variasi kamar mulai dari Deluxe Twin Room, Deluxe King Room, Deluxe Family Room, dan ke kamar yang paling mahal yaitu Deluxe Family Room.
+        </p>
+        <p>Hotel Lakeshore menyediakan banyak fasilitas bagi penginap hotel seperti gym, tempat laundry dan tempat untuk hewan peliharaan mereka. Selain itu, kamar yang disediakan oleh Hotel Lakeshore sangat rapi dan bersih. Selain itu, kamar mandi mereka sangat luas. Kamar mandi hotel Lakeshore menyediakan bathtub dengan ukuran yang luas, toilet dengan bidet dan juga alat mandi mulai dari sabun dll. Selain itu, gedung Lakeshore hotel sangat bersih dan rapi, sehingga merasa nyaman untuk menginap di sana. 
+            Tidak hanya kamar mereka yang enak tetapi makanan yang disediakan juga sangat enak. Mereka menyediakan beberapa makanan yang khas dari hualien dari bakpao, scallion pancake, dll. Tetapi favoritnya banyak orang adalah milk tea dan juga gelato mereka yang bervariasi.  Oleh karena itu, pengunjung hotel Lakeshore dapat memilih bervariasi makanan yang enak sesuai dengan preferensi mereka.
+        </p>
+        <p>Walaupun hotel Lakeshore sangat nyaman untuk ditempati, ada beberapa hal yang dapat dipertimbangkan. Salah satunya adalah kebersihan kamar, walaupun kamar Lakeshore hotel sangat nyaman. Ada beberapa hal yang merasa tidak bersih, salah satu nya adalah nightstand di dekat kasur.
+             Saya merasa ada banyak debu di sekitar nightstand tersebut mulai dari storage place nya, dll. Tetapi saya merasa hal ini bisa diperbaiki dan dibuat menjadi lebih enak untuk tamu.
+        </p>
+        <p>Lakeshore hotel merupakan hotel yang sangat bagus untuk harganya. Mereka menyediakan peralatan mandi, handuk, dan perlengkapan lain yang biasa digunakan untuk tamu.
+             Selain itu lobby hotel mereka sangat bersih dan enak, sehingga merasa sangat nyaman bagi tamu maupun mereka yang menginap di hotel Lakeshore. Tetapi hal yang saya sukai dari hotel ini adalah kamar yang luas dan juga makanan yang sangat enak.
+            </p>
+            <p>Menurut saya, hotel lakeshore merupakan hotel yang sangat nyaman dan pas untuk keluarga maupun pasangan. Selain cocok untuk tamu, tetapi hotel ini cocok untuk mereka yang ingin membawa hewan peliharaan mereka,
+                 karena sudah disediakan pet house untuk mereka yang membawa hewan peliharaan. Selain itu, variasi makanan yang disediakan hotel lakeshore sangat bagus untuk keluarga karena menyediakan gelato dan juga boba yang biasanya disukai oleh anak kecil. Tidak hanya untuk keluarga tetapi hotel ini cocok untuk mereka yang ingin berpetualang dan melihat keindahan Hualien. Karena letak hotel ini sekitar area pantai Hualien, hotel ini sangat cocok untuk mereka yang ingin melihat keindahan pantai Hualien, yang mengarah ke Samudra Pasifik.
+
+            </p>
+            </div>
+      </div>
